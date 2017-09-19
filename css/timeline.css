@@ -1,5 +1,6 @@
 .section.main {
-  background-color: #f5f8fa;
+  /*background-color: #f5f8fa;*/
+  background-image: '../img/hero.jpg'
 }
 .card-header {
     background-image: url("http://placehold.it/600x200");
