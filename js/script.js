@@ -5,6 +5,10 @@ let reviewsURL = 'https://softspotdatabase.herokuapp.com/reviews';
 
 $.get(reviewsURL)
 .then(addMainReviews)
+
+
+// $('.box-trending').slick();
+
 });
 
 function addMainReviews(data) {

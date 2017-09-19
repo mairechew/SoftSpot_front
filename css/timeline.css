@@ -1,6 +1,14 @@
 .section.main {
-  /*background-color: #f5f8fa;*/
-  background-image: '../img/hero.jpg'
+  background-color: #f5f8fa;
+  /*width: 100%;
+  height: 100%;
+  background: url('https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiJAAAAJDcwMTNjMDk5LTJhMDEtNGY3ZS1iMmQ4LTBiODk4NmY3Mzc0OA.jpg') center center no-repeat;
+  background-size: cover;*/
+}
+
+#review-box {
+  max-height: 90vh;
+  overflow: scroll;
 }
 .card-header {
     background-image: url("http://placehold.it/600x200");
@@ -88,6 +96,7 @@ ul.card-stats-list {
 
 .trending .trend-title {
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .trending .trend-hashtag {

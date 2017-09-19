@@ -7,7 +7,9 @@
   <title>SoftSpot</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/> -->
   <link rel="stylesheet" type="text/css" href="../css/timeline.css">
+
   <style type="text/css">
     body {
       font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -55,13 +57,15 @@
           </div>
           <div class="spacer"></div>
           <div class="box trending">
-            <p class="trend-title"><span class="title is-5">Trends</span> · <a href="#">change</a></p>
-            <p class="trend-hashtag"><a href="#">#hashtag1</a><br>13k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag2</a><br>29k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag3</a><br>2k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag4</a><br>9k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag5</a><br>18k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag6</a><br>168k statuses</p>
+            <p class="trend-title"><span class="title is-5"> 2017 Trending Technologies</span></p>
+            <!-- <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <div><h3>1</h3></div>
+            <div><h3>2</h3></div>
+            <div><h3>3</h3></div>
+            <div><h3>4</h3></div>
+            <div><h3>5</h3></div>
+            <div><h3>6</h3></div>
+          </div> -->
           </div>
         </div>
         <div class="column">
@@ -72,6 +76,7 @@
     </div>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
   <script type="text/javascript" src="../js/script.js">
   </script>
@@ -81,7 +86,7 @@
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src="http://placehold.it/128x128" alt="Image">
+          <img src="https://logo.clearbit.com/{{url}}"><alt="Image">
         </figure>
       </div>
       <div class="media-content">
@@ -104,6 +109,20 @@
     {{/each}}
 </script>
 
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">TecKNOWLEDGEY^n</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+      </p>
+      <p>
+      </p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
