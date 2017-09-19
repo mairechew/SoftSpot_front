@@ -38,7 +38,7 @@
 
       <div class="nav-right nav-menu">
         <span class="nav-item">
-          <a class="button" href="https://softspot.auth0.com/login?client=00oMtmECFm4Wnq0DTUlICXGmCIcdrP3c&protocol=oauth2&redirect_uri=http%3A%2F%2F127.0.0.1%3A8080%2Fhtml%2Fsignup.html&response_type=token%20id_token&scope=openid&audience=https%3A%2F%2Fsoftspot.auth0.com%2Fuserinfo&nonce=iTs50rBSCN1qXFgj5sSTn4mpI1d2VeSx&auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOC45LjMifQ%3D%3D&state=iIxckMNPh2JMsdMEt8h502VnKNLp1BVw" >
+          <a class="auth0-login button">
             <span>Login / Sign up</span>
           </a>
         </span>
@@ -76,10 +76,14 @@
     </div>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0/8.9/auth0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script> -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
-  <script type="text/javascript" src="../js/script.js">
-  </script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/signup.js"></script>
+
+
+
 
   <script id="review-feed-template" type="text/x-handlebars-template">
     {{#each reviews}}
