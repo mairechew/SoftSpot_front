@@ -7,28 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav role="navigation">
-        <ul class="nav__ul">
-            <li class="nav__li- ">
-                <a href=""></a></li>
-            <li class="nav__li--nav"><a href="">HOME</a></li>
-            <li class="nav__li--nav"><a href="">Other</a></li>
-        </ul>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+      <img src="../img/softspotlogo.png" alt="softspot lolo and home button" width="50" height="50">
+    </a>
+
+            <button class="button navbar-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+        </div>
+        <div class="navbar-menu">
+            <!-- navbar start, navbar end -->
+            <div class="navbar-end">
+                <!-- navbar items -->
+                <div class="navbar-item field">
+                    <!-- <label class="label">Name</label> -->
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <a id="" href="../tech.html" class="navbar-item">Tech</a>
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-link">User</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">Log In</a>
+                        <a class="navbar-item">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <header role="banner">
-        <img src="img/Profile-Pic-Cropped.jpg" alt="Photo of Kevin Anderson" class="header__img--pic">
-        <h1 class="header__h1--tagline "><i>Hi.</i></h1>
-        <!-- <p class="header__p--tagline2 ">I live in <strong>Broomfield,CO</strong>.</p> -->
-    </header>
+    <header role="banner" class="hero is-success is-fullheight">
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
 
+            <div class="container has-text-centered">
+                <img src="../img/softspotlogo.png" alt="Photo of hero image" class="header__img--pic">
+                <h1 class="title">SoftSpot
+                </h1>
+                <h2 class="subtitle">find out what's up in tech
+                </h2>
+            </div>
+        </div>
+    </header>
     <main role="main">
+        <!-- must us JS to add 'is-active' class when link in nav is clicked -->
+        <section id="signupForm" class="modal">
+            <div>
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Sign Up Form</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <!--  ... -->
+                        <!-- add Form here -->
+
+
+                    </section>
+                    <!-- <footer class="modal-card-foot">
+                        <button class="button is-success">Save changes</button>
+                        <button class="button">Cancel</button>
+                    </footer> -->
+                </div>
+            </div>
+        </section>
 
         <section class="main__section-">
             <article role="article">
@@ -36,7 +91,6 @@
                 <form role="search">
                 </form>
             </article>
-
         </section>
 
         <section class="main__section--present">
