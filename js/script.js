@@ -1,4 +1,4 @@
-$('document').ready( ()=>{
+$('document').ready( () => {
     'use strict';
 //code here
 let reviewsURL = 'https://softspotdatabase.herokuapp.com/reviews';
