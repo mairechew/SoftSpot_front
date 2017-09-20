@@ -6,6 +6,8 @@ var userProfile;
 
 
 $('document').ready( ()=>{
+
+$('#welcome-text').hide()
     'use strict';
 //code here
 var webAuth = new auth0.WebAuth({
@@ -50,6 +52,9 @@ function setSession(authResult) {
 }
 //todo Ajax
 function displayProfile(){
+  $('#login-button').hide();
+  $('#welcome-text').append(userProfile.name)
+  $('#welcome-text').show()
   console.log("Username:",  userProfile.name, "User Email:", userProfile.email, "User Picture", userProfile.picture);
 };
 function handleAuthentication() {
