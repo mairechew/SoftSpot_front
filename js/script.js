@@ -19,7 +19,7 @@ $.get(reviewsURL)
      console.log(techId);
 // $('.box-trending').slick();
 
-});
+};
 
 function addMainReviews(data) {
   let source   = $("#review-feed-template").html();
