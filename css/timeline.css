@@ -171,15 +171,17 @@ ul.card-stats-list {
   position: relative;
 }
 
-.trending {
-  max-width: 30vh;
-}
 .Tech-titles {
   font-size: 30px;
   padding: 20px;
   display: flex;
   justify-content: center;
 }
+
+.trending {
+  max-width: 30vh;
+}
+
 .photos {
   display: flex;
   justify-content: center;
