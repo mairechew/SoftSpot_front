@@ -7,9 +7,19 @@ $.get(reviewsURL)
 .then(addMainReviews)
 
 
-// $('.box-trending').slick();
+
+
+
+
 
 });
+
+//FUNCTION to add dato to Tech Page Data
+ function renderTechPageData (techId){
+     console.log(techId);
+// $('.box-trending').slick();
+
+};
 
 function addMainReviews(data) {
   let source   = $("#review-feed-template").html();
@@ -17,4 +27,5 @@ function addMainReviews(data) {
   let context = {reviews: data};
   let html    = template(context)
   $('#review-box').append(html);
+
 }
