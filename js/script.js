@@ -17,7 +17,6 @@ $.get(reviewsURL)
 //FUNCTION to add dato to Tech Page Data
  function renderTechPageData (techId){
      console.log(techId);
-=======
 // $('.box-trending').slick();
 
 });
