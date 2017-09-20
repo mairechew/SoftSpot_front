@@ -1,248 +1,138 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Soft Spot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
-</head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoftSpot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/> -->
+  <link rel="stylesheet" type="text/css" href="../css/timeline.css">
 
+  <style type="text/css">
+    body {
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+  </style>
+</head>
 <body>
 
-    <section class="hero is-primary is-large header-image">
-        <div class="hero-head">
-            <header class="nav">
-                <nav class="navbar" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <!-- navbar items, navbar burger... -->
-                        <a class="nav-item" href="../index.html">
-                           <img src="../img/softspotlogo.png" alt="Logo">
-                           </a>
-                        <div class="navbar-menu">
-                            <div class="navbar-end">
+  <nav class="nav has-shadow">
+    <div class="container">
+      <div class="nav-left">
+        <a class="nav-item is-tab is-active" ><i class="fa fa-search"></i> &nbsp; Search</a>
+        <a class="nav-item is-tab" href="./tech.html"><i class="fa fa-desktop"></i> &nbsp; Technology </a>
+      </div>
 
-                                <span><a id="" href="../tech.html" class="navbar-item">Tech</a></span>
-                                <span><a href="../user.html" class="navbar-link">User</a></span>
-                                <span><a href="#" class="navbar-item">Log In</a></span>
-                                <span><a href="#" class="navbar-item">Sign Up</a></span>
-                                </span>
-                                <div class="navbar-end">
-                                    <!-- navbar items -->
-                                    <div class="navbar-item field">
-                                        <!-- <label class="label">Name</label> -->
-                                        <div class="control">
-                                            <input class="input" type="text" placeholder="Search">
-                                        </div>
-                                    </div>
-                                    <a id="" href="../tech.html" class="navbar-item">Tech</a>
+      <div class="nav-center">
+        <a class="nav-item" href="./">
+          <img src="../img/softspot-logo.png" alt="logo">
+        </a>
+      </div>
 
-                                    <div class="navbar-item has-dropdown is-hoverable " aria-label="dropdown navigation">
-                                        <a class="navbar-link">User</a>
-                                        <div class="navbar-dropdown">
-                                            <a class="navbar-item">Log In</a>
-                                            <hr class="navbar-divider">
-                                            <a class="navbar-item">Sign Up</a>
-                                        </div>
-                                    </div>
-                                </div>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
 
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+      <div class="nav-right nav-menu">
+        <span class="nav-item">
+          <a class="auth0-login button">
+            <span>Login / Sign up</span>
+          </a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <section class="section main">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="card is-fullwidth">
+            <header >
+                  <img src="../img/softspot-logo.png">
+
             </header>
-        </div>
 
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title is-2">
-            SoftSpot
-          </h1>
-                <h2 class="subtitle is-5">
-            A place where tech happens.
-          </h2>
-                <p>
-                    <a class="button is-outlined">
-              <span class="icon">
-                <i class="fa fa-download"></i>
-              </span>
-              <span>
-                Explore
-              </span>
-            </a>
-                </p>
-            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="box trending">
+            <p class="trend-title"><span class="title is-5"> 2017 Trending Technologies</span></p>
+            <!-- <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <div><h3>1</h3></div>
+            <div><h3>2</h3></div>
+            <div><h3>3</h3></div>
+            <div><h3>4</h3></div>
+            <div><h3>5</h3></div>
+            <div><h3>6</h3></div>
+          </div> -->
+          </div>
         </div>
-    </section>
+        <div class="column">
+          <div id = "review-box" class="box">
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="hero-cta">
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0/8.9/auth0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/signup.js"></script>
+
+
+
+
+  <script id="review-feed-template" type="text/x-handlebars-template">
+    {{#each reviews}}
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://logo.clearbit.com/{{url}}"><alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>{{title}}</strong> <small>{{user_name}}</small> <small style="float:right;">{{tech_name}}</small>
+            <br>
+            {{body}}
+          </p>
+
+        </div>
         <nav class="level">
-            <div class="level-item has-text-centered">
-                <p class="title">Call to action here! <a class="button is-primary"><span class="icon"><i class="fa fa-download"></i></span><span>Intent</span></a></p>
-            </div>
-        </nav>
-    </div>
-
-    <div class="section main">
-        <!--<section id="signupForm" class="modal">
-        <div>
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Sign Up Form</p>
-                    <button class="delete" aria-label="close"></button>
-                </header>
-                <!-- <section class="modal-card-body">
-
-                    </section> -->
-        <!-- <footer class="modal-card-foot">
-                        <button class="button is-success">Save changes</button>
-                        <button class="button">Cancel</button>
-                    </footer> -->
-
-        <div class="container">
-            <div class="columns">
-                <div class="column is-6">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Featured Review</h2>
-                            <p class="title">
-                                “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-                            </p>
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="http://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h2>Latest Tech</h2>
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-128x128">
-                                        <img src="http://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">Bulma</p>
-                                    <p class="subtitle is-6">CSS</p>
-                                    <div class="content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                        <a href="#">#css</a> <a href="#">#responsive</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-6">
-                    <h2>Latest Reviews</h2>
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="http://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="http://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="http://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>
-                    <strong>SoftSpot</strong> by <a href="">techKNOWLEDGEy</a>
-                    <a href=""></a> Copyright 2017 <a href=""></a>.
-                </p>
-                <p>
-                    <a class="icon" href="">
-              <i class="fa fa-envelope"></i>
+          <div class="level-left">
+            <a class="level-item" title="{{url}}" href="http://{{url}}">
+              <span class="icon is-small"><i class="fa fa-reply"></i></span>
             </a>
-                </p>
-                <p> 123 Best Ever Drive Denver, CO
-                </p>
-            </div>
-        </div>
-    </footer>
+          </div>
+        </nav>
+      </div>
+    </article>
+    {{/each}}
+</script>
 
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">TecKNOWLEDGEY^n</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+      </p>
+      <p>
+      </p>
+    </div>
+  </div>
+</footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
     <script src="../js/addreview.js"></script>
 </body>
-
 </html>
