@@ -7,7 +7,9 @@
   <title>SoftSpot</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/> -->
   <link rel="stylesheet" type="text/css" href="../css/timeline.css">
+
   <style type="text/css">
     body {
       font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -19,11 +21,11 @@
     <div class="container">
       <div class="nav-left">
         <a class="nav-item is-tab is-active" ><i class="fa fa-search"></i> &nbsp; Search</a>
-        <a class="nav-item is-tab"><i class="fa fa-desktop"></i> &nbsp; Technology </a>
+        <a class="nav-item is-tab" href="./tech.html"><i class="fa fa-desktop"></i> &nbsp; Technology </a>
       </div>
 
       <div class="nav-center">
-        <a class="nav-item" href="#">
+        <a class="nav-item" href="./">
           <img src="../img/softspot-logo.png" alt="logo">
         </a>
       </div>
@@ -36,7 +38,7 @@
 
       <div class="nav-right nav-menu">
         <span class="nav-item">
-          <a class="button" href="https://softspot.auth0.com/login?client=00oMtmECFm4Wnq0DTUlICXGmCIcdrP3c&protocol=oauth2&redirect_uri=http%3A%2F%2F127.0.0.1%3A8080%2Fhtml%2Fsignup.html&response_type=token%20id_token&scope=openid&audience=https%3A%2F%2Fsoftspot.auth0.com%2Fuserinfo&nonce=iTs50rBSCN1qXFgj5sSTn4mpI1d2VeSx&auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOC45LjMifQ%3D%3D&state=iIxckMNPh2JMsdMEt8h502VnKNLp1BVw" >
+          <a class="auth0-login button">
             <span>Login / Sign up</span>
           </a>
         </span>
@@ -46,239 +48,85 @@
   <section class="section main">
     <div class="container">
       <div class="columns">
-        <div class="column is-3">
+        <div class="column">
           <div class="card is-fullwidth">
-            <header class="card-header">
+            <header >
+                  <img src="../img/softspot-logo.png">
             </header>
-            <div class="card-content">
-              <a class="card-avatar">
-                <img src="https://pbs.twimg.com/profile_images/3005141692/dc8e1eb36b6cbd2b5726f63c50adf7f2.png" class="card-avatar-img">
-              </a>
 
-              <div class="card-user">
-                <div class="card-user-name">
-                  <a href="#">John Smith</a>
-                </div>
-                <span>
-                  <a href="#">@<span>jsmith</span></a>
-                </span>
-              </div>
-
-              <div class="card-stats">
-                <ul class="card-stats-list">
-                  <li class="card-stats-item">
-                    <a href="#" title="9.840 Tweet">
-                      <span class="card-stats-key">Tweets</span>
-                      <span class="card-stats-val">1</span>
-                    </a>
-                  </li>
-                  <li class="card-stats-item">
-                    <a href="#/following" title="885 Following">
-                      <span class="card-stats-key">Following</span>
-                      <span class="card-stats-val">0</span>
-                    </a>
-                  </li>
-                  <li class="card-stats-item">
-                    <a href="#">
-                      <span class="card-stats-key">Followers</span>
-                      <span class="card-stats-val">0</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
           <div class="spacer"></div>
           <div class="box trending">
-            <p class="trend-title"><span class="title is-5">Trends</span> · <a href="#">change</a></p>
-            <p class="trend-hashtag"><a href="#">#hashtag1</a><br>13k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag2</a><br>29k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag3</a><br>2k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag4</a><br>9k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag5</a><br>18k statuses</p>
-            <p class="trend-hashtag"><a href="#">#hashtag6</a><br>168k statuses</p>
+            <p class="trend-title"><span class="title is-5"> 2017 Trending Technologies</span></p>
+            <!-- <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            <div><h3>1</h3></div>
+            <div><h3>2</h3></div>
+            <div><h3>3</h3></div>
+            <div><h3>4</h3></div>
+            <div><h3>5</h3></div>
+            <div><h3>6</h3></div>
+          </div> -->
           </div>
         </div>
-        <div class="column is-6">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="http://placehold.it/128x128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small style="float:right;">31m</small>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </p>
-                </div>
-                <nav class="level">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="http://placehold.it/128x128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small style="float:right;">31m</small>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </p>
-                </div>
-                <nav class="level">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="http://placehold.it/128x128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small style="float:right;">31m</small>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </p>
-                </div>
-                <nav class="level">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="http://placehold.it/128x128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small style="float:right;">31m</small>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </p>
-                </div>
-                <nav class="level">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="http://placehold.it/128x128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small style="float:right;">31m</small>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </p>
-                </div>
-                <nav class="level">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="http://placehold.it/128x128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small style="float:right;">31m</small>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                  </p>
-                </div>
-                <nav class="level">
-                  <div class="level-left">
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                    </a>
-                    <a class="level-item">
-                      <span class="icon is-small"><i class="fa fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </article>
+        <div class="column">
+          <div id = "review-box" class="box">
           </div>
         </div>
       </div>
     </div>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0/8.9/auth0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/signup.js"></script>
+
+
+
+
+  <script id="review-feed-template" type="text/x-handlebars-template">
+    {{#each reviews}}
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="https://logo.clearbit.com/{{url}}"><alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>{{title}}</strong> <small>{{user_name}}</small> <small style="float:right;">{{tech_name}}</small>
+            <br>
+            {{body}}
+          </p>
+        </div>
+        <nav class="level">
+          <div class="level-left">
+            <a class="level-item" title="{{url}}" href="http://{{url}}">
+              <span class="icon is-small"><i class="fa fa-reply"></i></span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+    {{/each}}
+</script>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">TecKNOWLEDGEY^n</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+      </p>
+      <p>
+      </p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

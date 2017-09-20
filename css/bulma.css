@@ -1814,7 +1814,7 @@ a.box:active {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
+          justify-content: center;
 }
 
 .control.has-addons .button,
