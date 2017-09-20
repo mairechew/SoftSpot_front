@@ -4,7 +4,7 @@ body {
 }
 .is-dark {
   background-color: #F62459;
-  background-image: linear-gradient(rgba(25, 181, 254, 0.8),rgba(0, 0, 51, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://cdn.pixabay.com/photo/2016/07/03/18/04/tech-1495181_960_720.jpg');
+  background-image: linear-gradient(rgba(25, 181, 254, 0.8),rgba(0, 0, 51, 0.6)),linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../img/tech.jpg');
 }
 .nav {
   padding: 20px 0;

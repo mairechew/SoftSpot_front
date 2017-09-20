@@ -1,1 +1,0 @@
-# SoftSpot_front
