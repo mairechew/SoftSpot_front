@@ -129,7 +129,7 @@ $( 'document' ).ready( () => {
     function sendTechReview( dataR ) {
         $.ajax( {
             type: "POST",
-            url: `${localDB}`,
+            url: `${dbUrl}`,
             data: dataR,
             async: true,
             crossDomain: true,
