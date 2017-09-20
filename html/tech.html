@@ -8,7 +8,6 @@
   <title>Technology</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/> -->
   <link rel="stylesheet" type="text/css" href="../css/timeline.css">
 
   <style type="text/css">
@@ -55,20 +54,20 @@
 
           <div class="tile is-parent">
             <article class="tile is-child notification is-primary">
-              <p class="title">Technology Name</p>
+              <p id="tech-name" class="title"></p>
               <figure class="image is-4by3">
-                <img src="https://logo.clearbit.com/bulma.io">
+                <img src="https://logo.clearbit.com/atom.io">
               </figure>
             </article>
           </div>
           <div class="tile is-parent is-vertical">
             <article class="tile is-child notification is-primary">
               <p class="title">Category</p>
-              <p class="subtitle">...</p>
+              <p class="subtitle" id="category-name"></p>
             </article>
             <article class="tile is-child notification is-primary">
               <p class="title">Description</p>
-              <p class="subtitle">...</p>
+              <p class="subtitle" id="description"></p>
 
             </article>
             <article class="tile is-child notification is-primary">
@@ -83,7 +82,7 @@
         <div class="tile is-parent">
           <article class="tile is-child notification is-info">
             <p class="title">Related Technologies</p>
-            <p class="subtitle">...</p>
+            <p class="subtitle" id="related-tech"></p>
             <div class="content">
               <!-- Content -->
             </div>
@@ -94,36 +93,17 @@
         <article class="tile is-child notification is-dark">
           <div class="content">
             <p class="title">Reviews</p>
-            <div class="content">
+            <div class="content" id="reviews">
               <!-- Content -->
               <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
               </div>
 
               <div><h1></h1>
               </div>
 
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
+
 
               <div><h1></h1>
-              </div>
-
-              <div class="card-content">
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
               </div>
 
             </div>
@@ -148,5 +128,8 @@
     </div>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tech.js">
 
+</script>
 </html>

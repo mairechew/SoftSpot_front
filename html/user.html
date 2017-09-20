@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,23 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="../css/profile.css">
 </head>
+
 <body>
   <nav class="nav has-shadow">
     <div class="container">
       <div class="nav-left">
-        <a class="nav-item is-tab is-active" ><i class="fa fa-search"></i> &nbsp; Search</a>
-        <a class="nav-item is-tab" href="./tech.html"><i class="fa fa-desktop"></i> &nbsp; Technology </a>
+        <p id="search-box" class="control has-addons">
+          <input class="input" type="text" placeholder="Search for Tech">
+          <button class="button">
+            <i class="fa fa-desktop"></i>
+          </button>
+        </p>
+        <p id="user-search" class="control has-addons">
+          <input class="input" type="text" placeholder="Search for User">
+          <button class="button">
+            <i class="fa fa-users"></i>
+          </button>
+        </p>
       </div>
 
       <div class="nav-center">
@@ -25,15 +37,15 @@
 
       <span class="nav-toggle">
         <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
       </span>
 
       <div class="nav-right nav-menu">
         <span class="nav-item">
           <a class="auth0-login button">
             <span>Login / Sign up</span>
-          </a>
+        </a>
         </span>
       </div>
     </div>
@@ -64,105 +76,104 @@
     <section class="review-section">
 
 
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Review 1</p>
-          <p class="subtitle">With some content</p>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Review 2</p>
-          <p class="subtitle">With some content</p>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box">
-          <p class="title">Review 3</p>
-          <p class="subtitle">With some content</p>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-          </div>
-        </article>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent is-info">
+          <article class="tile is-child is-info box">
+            <p class="title">Review 1</p>
+            <p class="subtitle">With some content</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Review 2</p>
+            <p class="subtitle">With some content</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Review 3</p>
+            <p class="subtitle">With some content</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
+    </div>
+    </section>
 
-    <nav class="panel">
-      <p class="panel-heading">
-        Repositories
-      </p>
-      <div class="panel-block">
-        <p class="control has-icons-left">
-          <input class="input is-small" type="text" placeholder="Search">
-          <span class="icon is-small is-left">
-            <i class="fa fa-search"></i>
-          </span>
+      <nav class="panel">
+        <p class="panel-heading">
+          Professional Skills
         </p>
-      </div>
-      <p class="panel-tabs">
-        <a class="is-active">All</a>
-        <a>Public</a>
-        <a>Private</a>
-        <a>Sources</a>
-        <a>Forks</a>
-      </p>
-      <a class="panel-block is-active">
+        <a class="panel-block is-active">
         <span class="panel-icon">
           <i class="fa fa-book"></i>
         </span>
         bulma
       </a>
-      <a class="panel-block">
+        <a class="panel-block">
         <span class="panel-icon">
           <i class="fa fa-book"></i>
         </span>
         marksheet
       </a>
-      <a class="panel-block">
+        <a class="panel-block">
         <span class="panel-icon">
           <i class="fa fa-book"></i>
         </span>
         minireset.css
       </a>
-      <a class="panel-block">
+        <div class="panel-block">
+        <button class="button is-primary is-outlined is-fullwidth">
+          Endorse
+        </button>
+        <button class="button is-primary is-outlined is-fullwidth">
+          Add New
+        </button>
+        </div>
+      </nav>
+
+
+      <nav class="panel">
+        <p class="panel-heading">
+          Culture Skills
+        </p>
+        <a class="panel-block is-active">
         <span class="panel-icon">
           <i class="fa fa-book"></i>
         </span>
-        jgthms.github.io
+        bulma
       </a>
-      <a class="panel-block">
+        <a class="panel-block">
         <span class="panel-icon">
-          <i class="fa fa-code-fork"></i>
+          <i class="fa fa-book"></i>
         </span>
-        daniellowtw/infBoard
+        marksheet
       </a>
-      <a class="panel-block">
+        <a class="panel-block">
         <span class="panel-icon">
-          <i class="fa fa-code-fork"></i>
+          <i class="fa fa-book"></i>
         </span>
-        mojs
+        minireset.css
       </a>
-      <label class="panel-block">
-        <input type="checkbox">
-        Remember me
-      </label>
-      <div class="panel-block">
+        <div class="panel-block">
         <button class="button is-primary is-outlined is-fullwidth">
-          Reset all filters
+          Endorse
         </button>
-      </div>
-    </nav>
+        <button class="button is-primary is-outlined is-fullwidth">
+          Add New
+        </button>
+        </div>
+      </nav>
 
-        </section>
-
-    </div>
-  </div>
 </body>
+
 </html>
