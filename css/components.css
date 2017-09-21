@@ -1,0 +1,8 @@
+@media (min-width: 42rem) {
+    #section_UserReview-Container {
+        overflow-x: scroll;
+    }
+    .review {
+        width: 30%;
+    }
+}
