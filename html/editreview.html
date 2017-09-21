@@ -61,7 +61,7 @@
 
     </section>
     <main role="main">
-<h1> TO BE EDITED </h1>
+        <h1> TO BE EDITED </h1>
         <div class="section main">
             <!-- <section id="signupForm" class="modal is-active"> -->
             <div class="modal is-active">
@@ -69,42 +69,26 @@
                 <div class="modal-card is-active">
                     <section class="modal-card-body">
                         <section class="hero is-fullheight is-dark is-bold">
-                            <form id="addTechReviewForm" role="search" method="post" action="./html/tech.html">
-                                <!-- <fieldset> -->
-                                <div class="hero-body">
-                                    <div class="container">
-                                        <div class="columns is-vcentered">
-                                            <div class="column is-12">
+
+                            <div class="hero-body">
+                                <div class="container">
+                                    <div class="columns is-vcentered">
+                                        <div class="column is-12">
+
+                                            <form id="editTechReviewForm" role="search" method="post" action="tech.html">
+
                                                 <legend>
-                                                    <h1 class="title">
-                                      Review Tech
+                                                    <h1 id="editTechTitle" class="title">
+                                      Edit CSS Review
                                   </h1></legend>
                                                 <div class="box">
-                                                    <label class="label">Category</label>
-                                                    <div class="select">
-                                                        <select id="techCatSelect">
-                                                    <option >Select<option>
-                                                    <option data-category="TE">Text Editor</option>
-                                                    <option data-category="Software">Software</option>
-                                                    <option data-category="Language">Language</option>
-                                                    <option data-category="Library">Library</option>
 
-                                                    <option data-category="Markup Language">Markup Language</option>
-                                                </select>
-                                                    </div>
-                                                    <label class="label">Technology</label>
-                                                    <div class="select">
-                                                        <select id="techTechSelect">
-                                                    <option>Select<option>
-                                                    <!-- options created dynamically via js  -->
-                                                </select>
-                                                    </div>
                                                     <label for="techAddTitle" class="label">Title</label>
                                                     <p class="control">
-                                                        <input id="techAddTitle" class="input" type="text" placeholder="CSS is Awesome">
+                                                        <input id="techEditTitle" class="input" type="text">
                                                     </p>
                                                     <label class="label">Rating</label>
-                                                    <div id="techAddRating" class="control">
+                                                    <div id="techEditRating" class="control">
                                                         <label class="radio"><input value="1" name="rating" type="radio" >1</label>
 
                                                         <label class="radio"><input value="2" name="rating" type="radio" >2</label>
@@ -120,7 +104,7 @@
                                                     <hr>
                                                     <div class="control">
                                                         <label class="label">Body</label>
-                                                        <textarea id="techAddText" class="textarea" placeholder="Write review" rows="10"> </textarea>
+                                                        <textarea id="techEditText" class="textarea" placeholder="Write review" rows="10"> </textarea>
                                                     </div>
                                                     <hr>
                                                     <p class="control">
@@ -128,11 +112,10 @@
                                                         <button class="button is-default is-large" type="submit">Submit</button>
                                                     </p>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- </fieldset> -->
+                            </div>
                             </form>
                 </div>
                 </section>
