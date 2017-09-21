@@ -14,6 +14,12 @@ $.get(reviewsURL)
 
 });
 
+//GLOBAL VARIABLES-CAN USE IN ALL JS FILES **********************************************************************************************************************************************************************
+
+let currentUserId = 2 ;
+
+//GLOBAL FUNCTIONS-CAN USE IN ALL JS FILES **********************************************************************************************************************************************************************
+
 //FUNCTION to add dato to Tech Page Data
  function renderTechPageData (techId){
      console.log(techId);

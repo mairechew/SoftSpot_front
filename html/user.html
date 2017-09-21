@@ -8,13 +8,14 @@
     <title>SoftSpot</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/profile.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="../img/Favicon.ico">
 </head>
 
 <body>
-    <nav class="nav has-shadow">
+    <nav class="nav has-shadow" role="navigation">
         <div class="container">
             <div class="nav-left">
                 <p id="search-box" class="control has-addons">
@@ -31,8 +32,8 @@
                 </p>
             </div>
 
-      <div class="nav-center">
-        <a class="nav-item" href="./index.html">
+            <div class="nav-center">
+                <a class="nav-item" href="./index.html">
           <img src="../img/softspot-logo.png" alt="logo">
         </a>
             </div>
@@ -52,9 +53,12 @@
             </div>
         </div>
     </nav>
-    <div class="container profile">
-        <!-- REMOVE THIS SECTION WHEN DYNAMIC JS WORKING TO CREATE -->
-        <div class="section profile-heading" id="userProfile">
+    <main role="main">
+        <section>
+            <div class="tile is-ancestor" role="article">
+                <div class="container profile" id="userProfile">
+                    <!-- REMOVE THIS SECTION WHEN DYNAMIC JS WORKING TO CREATE -->
+                    <!-- <div class="section profile-heading">
             <div class="columns">
                 <div class="column is-2">
                     <div class="image is-128x128 avatar">
@@ -72,163 +76,63 @@
                     <p class="stat-key">Endorsements</p>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+                </div>
+            </div>
+        </section>
         <div class="spacer"></div>
 
         <section class="review-section">
 
-
             <div id="section_UserReview-Container" class="tile is-ancestor">
                 <!--Reviews  will be created dynamically -->
             </div>
-    </div>
-    </div>
-    </section>
+        </section>
 
-    <article id="proSkills" class="panel">
-        <h1 class="panel-heading">
-            Professional Skills
+        <section>
+            <div class="panel" role="article">
+                <h1 class="panel-heading">
+            Skills
         </h1>
-        <!--  REMOVE CONTENT WHEN DYNAMIC JS FUNCTIONALITY CREATED-->
-        <div class="panel-block is-active">
-            <!-- <div class="field is-grouped is-grouped-multiline">
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">Technology</span>
-                        <a class="tag is-delete"></a>
-                    </div>
-                </div>
 
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">CSS</span>
-                        <a class="tag is-delete"></a>
-                    </div>
-                </div>
+                <div class="panel-block is-active">
+                    <!--  REMOVE CONTENT WHEN DYNAMIC JS FUNCTIONALITY CREATED-->
+                    <!-- NEED TO SHOW A PLUS SIGN IN LIEU OF X ON  -->
+                    <div class="field is-grouped is-grouped-multiline" id="proSkills">
+                        <!-- <div class="control">
+                            <div class="tags has-addons">
+                                <span class="tag is-info">CSS</span>
+                                <a class="tag "><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
 
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">Flexbox</span>
-                        <a class="tag is-delete"></a>
+                        <div class="control">
+                            <div class="tags has-addons">
+                                <span class="tag is-info">ATOM</span>
+                                <a class="tag "><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div> -->
                     </div>
-                </div>
-
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">Web Design</span>
-                        <a class="tag is-delete"></a>
-                    </div>
-                </div>
-
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">Open Source</span>
-                        <a class="tag is-delete"></a>
-                    </div>
-                </div>
-
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">Community</span>
-                        <a class="tag is-delete"></a>
-                    </div>
-                </div>
-
-                <div class="control">
-                    <div class="tags has-addons">
-                        <span class="tag is-info">Documentation</span>
-                        <a class="tag is-delete"></a>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="columns">
-                <div class="column is-half is-offset-2">
-                    <span class="panel-icon">
-                <i class="fa fa-book"></i>
-            </span>
-                    <h2>bulma</h2>
-                </div>
-                <div class="column is-half"> <button class="button is-primary is-outlined is-one-quarter">
-                    Endorse</button>
-                </div>
-                <div class="column is-half is-offset-2">
-                    <span class="panel-icon">
-                <i class="fa fa-book"></i>
-            </span>
-                    <h2>css</h2>
-                </div>
-                <div class="column is-half"> <button class="button is-primary is-outlined is-one-quarter">
-                    Endorse</button>
-                </div>
-                <div class="column is-half is-offset-2">
-                    <span class="panel-icon">
-                <i class="fa fa-book"></i>
-            </span>
-                    <h2>html</h2>
-                </div>
-                <div class="column is-half"> <button class="button is-primary is-outlined is-one-quarter">
-                    Endorse</button>
                 </div>
             </div>
+        </section>
+    </main>
 
 
-            <div class="panel-block">
+    <footer class="footer" role="contetinfo">
+        <div class="container">
+            <div class="content has-text-centered">
 
-                <button class="button is-primary is-outlined is-fullwidth">
-          Add New
-        </button>
+                <p><strong>SoftSpot</strong> by TecKNOWLEDGEY^n. The source code is licensed </p>
+                <p> 123 Delawere St, Denver, CO 80229 </p>
+                <p> softspotg59@gmail.com &copy; Copyright 2017 </p>
             </div>
-    </article>
-
-
-    <article class="panel">
-        <h1 class="panel-heading">
-            Culture Skills
-        </h1>
-        <a class="panel-block is-active">
-        <span class="panel-icon">
-          <i class="fa fa-book"></i>
-        </span>
-        bulma
-      </a>
-        <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fa fa-book"></i>
-        </span>
-        marksheet
-      </a>
-        <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fa fa-book"></i>
-        </span>
-        minireset.css
-      </a>
-        <div class="panel-block">
-            <button class="button is-primary is-outlined is-fullwidth">
-          Endorse
-        </button>
-            <button class="button is-primary is-outlined is-fullwidth">
-          Add New
-        </button>
         </div>
-    </article>
-
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
     <script src="../js/user.js">
     </script>
-
-      <footer class="footer">
-        <div class="container">
-          <div class="content has-text-centered">
-            <p><strong>SoftSpot</strong> by TecKNOWLEDGEY^n. The source code is licensed </p>
-            <p> 123 Delawere St, Denver, CO 80229 </p>
-            <p> softspotg59@gmail.com &copy; Copyright 2017 </p>
-          </div>
-        </div>
-      </footer>
 </body>
 
 </html>
