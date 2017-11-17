@@ -1,6 +1,8 @@
 # SoftSpot_front
 Software. Insight. Delivered.
 
+![](https://github.com/mairechew/SoftSpot_front/blob/master/softspot.gif)
+
 ## Getting Started
 A decoupled full-stack CRUD App that stores reviews about technologies and software.
 
