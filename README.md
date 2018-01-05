@@ -1,12 +1,27 @@
 # SoftSpot_front
 Software. Insight. Delivered.
 
-![](https://github.com/mairechew/SoftSpot_front/blob/master/softspot.gif)
 
 ## Getting Started
 A decoupled full-stack CRUD App that stores reviews about technologies and software.
 
 To be used with [SoftSpot_back][https://github.com/wroth08/SoftSpot_back]
+
+## Problem 
+Where can a user find reliable software / tech reviews without targeted reviews based on paid advertising?
+
+## Hypothesis
+If we provide a review-based website for users to read up on software and approval from the community we can prevent being swayed to use one technology / software over another based on paid advertising.
+
+## Wireframes
+![SoftSpot-wireframe](https://github.com/mairechew/SoftSpot_front/blob/master/SoftSpot-wireframe.png)
+
+## Demo
+![](https://github.com/mairechew/SoftSpot_front/blob/master/softspot.gif)
+
+## Reflection
+Due to the time crunch around this project, Team TecKNOWLEDGEY^n was not able to build out the search features for the site but next iteration we would like to. Other improvements include the GUI for users to edit their profile and add/edit their reviews. 
+
 
 ## Built With
 
