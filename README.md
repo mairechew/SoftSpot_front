@@ -19,8 +19,16 @@ If we provide a review-based website for users to read up on software and approv
 ## Demo
 ![](https://github.com/mairechew/SoftSpot_front/blob/master/softspot.gif)
 
-## Reflection
-Due to the time crunch around this project, Team TecKNOWLEDGEY^n was not able to build out the search features for the site but next iteration we would like to. Other improvements include the GUI for users to edit their profile and add/edit their reviews. 
+## Reflection / Improvments
+Due to the time crunch around this project, Team TecKNOWLEDGEY^n was not able to build out all of the features for the site but next iteration we would like to include the following implementations:
+
+* Edit review page
+* Search capabilities
+* Software page verification
+* Add professional/culture skills to user profile page
+* Edit review
+* Edit user profile
+
 
 
 ## Built With
@@ -46,11 +54,4 @@ Due to the time crunch around this project, Team TecKNOWLEDGEY^n was not able to
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Future Implementations
 
-* Edit review page
-* Search capabilities
-* Software page verification
-* Add professional/culture skills to user profile page
-* Edit review
-* Edit user profile
